@@ -1,4 +1,3 @@
-
 const button = document.getElementById('result').value;
 button.addEventListener('click', function diplay(num){
 
