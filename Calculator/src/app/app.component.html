@@ -65,116 +65,102 @@
     position: relative;
   }
 
-  .angular-logo {
-    max-width: 9.2rem;
-  }
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #000000;
+}
 
-  .content {
+.calculator {
     display: flex;
-    justify-content: space-around;
-    width: 100%;
-    max-width: 700px;
-    margin-bottom: 3rem;
-  }
+}
+.container {
+    
+    border: 1px solid #140a06;
+    border-radius: 20px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 55%;
+    background-color: #140a06;
+}
 
-  .content h1 {
-    margin-top: 1.75rem;
-  }
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2%;
+    padding: 5%;
+}
 
-  .content p {
-    margin-top: 1.5rem;
-  }
+.button { 
+        height: 95%;
+        padding: 10%;
+        font-size: 2rem;    
+        color: #c4c4c4;
+        background-color: #28140d;
+        border-radius: 60px;
+        border: transparent;
+        box-shadow: inset 0 0 0 1px rgba(255,255,255,.05), inset 0 1px 0 0 rgba(31, 28, 28);
 
-  .divider {
-    width: 1px;
-    background: var(--asphalt-to-coffee-bean-to-cedar-vertical-gradient);
-    margin-inline: 0.5rem;
-  }
+}
 
-  .pill-group {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    flex-wrap: wrap;
-    gap: 1.25rem;
-  }
+.button:hover {
+    background-color: #8d472e;
+}
 
-  .pill {
-    display: flex;
-    align-items: center;
-    --pill-accent: var(--brown-rust);
-    background: color-mix(in srgb, var(--pill-accent) 5%, transparent);
-    color: var(--pill-accent);
-    padding-inline: 0.75rem;
-    padding-block: 0.375rem;
-    border-radius: 2.75rem;
-    border: 0;
-    transition: background 0.3s ease;
-    font-family: var(--inter-font);
-    font-size: 0.875rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.4rem;
-    letter-spacing: -0.00875rem;
-    text-decoration: none;
-  }
+.operator {
+    font-size: 2rem;    
+    color: #c4c4c4;
+    border-radius: 60px;
+    border: transparent;
+    background-color: #3d1f14;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,.05), inset 0 1px 0 0 rgba(31, 28, 28);
+}
+.operator:hover{
+    background-color: #a25234;
+}
 
-  .pill:hover {
-    background: color-mix(in srgb, var(--pill-accent) 15%, transparent);
-  }
+.clear {
+    background-color: #51291a;
+    border-color: transparent;
+    color: #fff;
+    border-radius: 60px;
+    width: 95%;
+    height: 60%;  
+}
 
-  .pill-group .pill:nth-child(6n + 1) {
-    --pill-accent: var(--brown-rust);
-  }
-  .pill-group .pill:nth-child(6n + 2) {
-    --pill-accent: var(--mule-fawn);
-  }
-  .pill-group .pill:nth-child(6n + 3),
-  .pill-group .pill:nth-child(6n + 4),
-  .pill-group .pill:nth-child(6n + 5) {
-    --pill-accent: var(--asphalt);
-  }
+.clear:hover {
+    background-color: #b65c3b;
+}
 
-  .pill-group svg {
-    margin-inline-start: 0.25rem;
-  }
+.equal-sign {
+    background-color: #3d1f14;
+    border-color: transparent;
+    border-radius: 60px;
+    color: #fff;
+}
 
-  .social-links {
-    display: flex;
-    align-items: center;
-    gap: 0.73rem;
-    margin-top: 1.5rem;
-  }
+.equal-sign:hover {
+    background-color: #a25234;
+}
 
-  .social-links path {
-    transition: fill 0.3s ease;
-    fill: var(--gray-400);
-  }
-
-  .social-links a:hover svg path {
-    fill: var(--gray-900);
-  }
-
-  @media screen and (max-width: 650px) {
-    .content {
-      flex-direction: column;
-      width: max-content;
-    }
-
-    .divider {
-      height: 1px;
-      width: 100%;
-      background: var(--asphalt-to-coffee-bean-to-cedar-horizontal-gradient);
-      margin-block: 1.5rem;
-
-    }
-  }
-</style>
+.screen{
+    background-color:transparent;
+    justify-content: right;
+    color: #c4c4c4;
+    border: transparent;
+    font-size: xx-large;
+    border-radius: 60px;
+    width: 40%;
+    height: 10%;
+    cursor: default;
+    padding: 10px; 
+    padding-left: 40%;
+}</style>
 
 <main class="main"> 
         <script src="C:\Users\JanaPlatz\Documents\GitHub\calculator-in-angular\Calculator\src\app\app.js" ></script>
-        <link rel="stylesheet" href="C:\Users\JanaPlatz\Documents\GitHub\calculator-in-angular\Calculator\src\styles.css">
-
 <body>
     <div class="calculator">
         <h1 style="text-align: center;">Calculator</h1>
@@ -203,5 +189,9 @@
                     <input type="button" value="." class="button" onclick="display('.')">
                     <input type="button" value= "=" class="button equal-sign" onclick="solve()">      
                     <input type="button" value="+" class="operator" onclick="display('+')">
-		</div> 
+          </div> 
+        </div> 
+    </div> 
+   </body>
+</main>
 <router-outlet />
