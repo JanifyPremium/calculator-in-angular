@@ -28,7 +28,7 @@
     );
 
     --pill-accent: var(--brown-rust);
-
+    
     font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
       "Segoe UI Symbol";
@@ -37,34 +37,32 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-/* You can add global styles to this file, and also import other style files */
 </style>
 
 <main class="main">      
     <div class="calculator">
         <h1 style="text-align: center;">Calculator</h1>
-        
-            <div class="container">
-               <div colspan="3" ><input type="text" id='result' class ='screen' ></div>
-                  <div class="keys">
-                    <input type="button" value="7" class="button" (click)="display(7)">
-                    <input type="button" value="8" class="button " (click)="display(8)">
-                    <input type="button" value="9" class="button" (click)="display(9)">
-                    <input type="button" value="/" class="operator" (click)="display('/')">
-                    <input type="button" value="4" class="button" (click)="display(4)">
-                    <input type="button" value="5" class="button" (click)="display(5)"> 
-                    <input type="button" value="6" class="button" (click)="display(6)">
-                    <input type="button" value="*" class="operator" (click)="display('*')">
-                    <input type="button" value="1" class="button" (click)="display(1)">
-                    <input type="button" value="2" class="button" (click)="display(2)">
-                    <input type="button" value="3" class="button" (click)="display(3)">
-                    <input type="button" value="-" class="operator" (click)="display('-')">
-                    <input type="button" value="0" class="button" (click)="display(0)">
-                    <input type="button" value="." class="button" (click)="display('.')">
-                    <input type="button" value= "=" class="button equal-sign" (click)="solve()">      
-                    <input type="button" value="+" class="operator" (click)="display('+')">
-                    <input type="button" value="C" class="clear" (click)="clearScreen()">
-          </div> 
+    <div class="container">
+        <div colspan="3" ><input type="text" id='result' class ='screen' ></div>
+           <div class="keys">
+              <input type="button" value="7" class="button" (click)="display(7)">
+              <input type="button" value="8" class="button " (click)="display(8)">
+              <input type="button" value="9" class="button" (click)="display(9)">
+              <input type="button" value="/" class="operator" (click)="display('/')">
+              <input type="button" value="4" class="button" (click)="display(4)">
+              <input type="button" value="5" class="button" (click)="display(5)"> 
+              <input type="button" value="6" class="button" (click)="display(6)">
+              <input type="button" value="*" class="operator" (click)="display('*')">
+              <input type="button" value="1" class="button" (click)="display(1)">
+              <input type="button" value="2" class="button" (click)="display(2)">
+              <input type="button" value="3" class="button" (click)="display(3)">
+              <input type="button" value="-" class="operator" (click)="display('-')">
+              <input type="button" value="0" class="button" (click)="display(0)">
+              <input type="button" value="." class="button" (click)="display('.')">
+              <input type="button" value= "=" class="operator" (click)="solve()">      
+              <input type="button" value="+" class="operator" (click)="display('+')">
+              <input type="button" value="C" class="clear" (click)="clearScreen()">
+            </div> 
         </div> 
     </div> 
 </main>
