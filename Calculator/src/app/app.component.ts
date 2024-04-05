@@ -12,7 +12,7 @@ import {HomeComponent} from './home/home.component';
 export class AppComponent {
   title = 'Calculator';
   
-
+//function to display numbers and operators 
 display(val: any): any {
     const result: HTMLInputElement = document.getElementById('result') as HTMLInputElement;
     
@@ -21,6 +21,7 @@ display(val: any): any {
     return val;
 }
 
+//function to solve and display the result
 solve(): any {
     const result: HTMLInputElement = document.getElementById('result') as HTMLInputElement;
     const x: string = result.value;
@@ -30,6 +31,7 @@ solve(): any {
     return solvedcalculation;
 }
 
+//Clears the display form Numbers and Strings
 clearScreen(): any {
 
     const result: HTMLInputElement = document.getElementById('result') as HTMLInputElement;

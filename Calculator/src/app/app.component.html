@@ -1,6 +1,7 @@
 
 <style>
   :host {
+    /*Project Colors, Gradients and Font */
     --asphalt: oklch(15.77% 0.02 45.56);
     --coffee-bean: oklch(21.76% 0.036 39.98);
     --cedar: oklch(27.75% 0.051 40.68);
@@ -43,8 +44,10 @@
     <div class="calculator">
         <h1 style="text-align: center;">Calculator</h1>
     <div class="container">
+      <!--Calculator display-->
         <div colspan="3" ><input type="text" id='result' class ='screen' ></div>
            <div class="keys">
+            <!--Buttons of the calculator-->
               <input type="button" value="7" class="button" (click)="display(7)">
               <input type="button" value="8" class="button " (click)="display(8)">
               <input type="button" value="9" class="button" (click)="display(9)">
